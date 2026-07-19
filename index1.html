@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style1.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="player">
+
+        <h2>🎵 Music Player</h2>
+
+        <img id="cover"
+            src="https://play-lh.googleusercontent.com/9N-IWll7yD8jvmEnuMvsUgXTnOKK0Gb_IKj9PNV96tS3Gv3XHaFkQB5XJnwldRvbtiB5nMigcBLrwYf7cc1qxQ">
+
+        <h3 id="title">Song 1</h3>
+        <p id="artist">Artist 1</p>
+
+        <audio id="audio" ></audio>
+
+
+        <div class="time">
+            <span id="current">0:00</span>
+            <span id="duration">0:00</span>
+        </div>
+
+        <input type="range" id="progress" value="0">
+
+        <div class="controls">
+
+            <button id="prev">
+                <i class="fas fa-backward"></i>
+            </button>
+
+            <button id="play">
+                <i class="fas fa-play"></i>
+            </button>
+
+            <button id="next">
+                <i class="fas fa-forward"></i>
+            </button>
+
+
+        </div>
+
+        <div class="volume">
+
+            <i class="fas fa-volume-up"></i>
+
+            <input type="range" id="volume" min="0" max="1" step="0.01" value="1">
+
+        </div>
+
+        <h3>Playlist</h3>
+
+        <ul id="playlist"></ul>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
